@@ -54,8 +54,12 @@ header > h1 {
       line-height: 2em;
       padding-left: 30px;
       font-family: var(--fonte3);
-      font-size: 4vw;
+      font-size: 3vw;
       /* a propriedade vh faz a responsibidade para telas menores */
+ }
+  section > p { 
+      padding-bottom: 2em;
+
  }
  section.normal {
      background-color: white;
@@ -72,6 +76,15 @@ header > h1 {
      display: inline-block;
      padding: 5px;
  }
+  section#img01 {
+     background-image: url('../imagens/background001.jpg');
+     background-position:  right center;
+
+ }
+  section#img02 {
+     background-image: url('../imagens/background002.jpg');
+
+}
  
  footer {
      background-color: black;
