@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root {
+    --fonte1:'Verdana, Geneva, Tahoma ,sans-serif';
+    --fonte2:'Roboto', sans-serif;
+    --fonte3:'Bebas Neue', cursive;
+}
 
 * {
     margin: 0px;
@@ -8,12 +15,14 @@
 html, body {
     min-height :100vh ;
     background-color:  darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
     background-color:  black;
     color: white;
     text-align: center;
+    
 
 }
 header > h1 {
@@ -21,6 +30,8 @@ header > h1 {
     /* text-transform: ; */
     font-variant: small-caps;
     /* letras no formato maiúsculo */
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
  header > p {
      padding-bottom: 50px;
@@ -42,6 +53,9 @@ header > h1 {
       */
       line-height: 2em;
       padding-left: 30px;
+      font-family: var(--fonte3);
+      font-size: 4vw;
+      /* a propriedade vh faz a responsibidade para telas menores */
  }
  section.normal {
      background-color: white;
@@ -53,9 +67,10 @@ header > h1 {
      color: white;
  }
  section.imagem > p { 
-     width:400px;
+     /* width:400px; */
     background-color: rgb(0, 0, 0,253);
-     
+     display: inline-block;
+     padding: 5px;
  }
  
  footer {
